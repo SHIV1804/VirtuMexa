@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #09122C;
+}
+
+h1 {
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #872341;
+    font-size: 3rem;
+}
+
+label {
+    color: #BE3144;
+    display: block;
+    margin: 10px;
+}
+
+.box {
+    font-size: 1rem;
+    border: 2px solid #3136be;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10vh;
+}
+
+#userNumber {
+    width: 50vw;
+}
+
+#dropdown {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding-right: 20px;
+    width: 8rem;
+    appearance: none;
+    outline: none;
+    transition: background-color 0.3s ease,     /* Transition for background color */
+                border-color 0.3s ease,         /* Transition for border color */
+                box-shadow 0.3s ease;           /* Transition for box shadow */
+    
+}
+
+#dropdown:hover,button:hover {
+    background-color: #2b2b2b; /* Lighter green background */
+    border-color: #45a049; /* Darker green border */
+}
+
+#dropdown:focus {
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5); /* Add green glow */
+    border-color: #2e7d32; /* Dark green border */
+}
+#dropdownBox {
+        position: relative; /* Make it a containing block for ::after */
+        display: inline-block; /* Ensure proper layout */
+        width: fit-content; /* Optional for dropdown sizing */
+}
+
+#dropdownBox::after {
+    content: '▼'; /* Downward arrow */
+    position: absolute;
+    top: 50%; /* Vertically center */
+    right: 25px; /* Position inside dropdown */
+    transform: translateY(-50%); /* Default position */
+    font-size: 12px;
+    color: white;
+    pointer-events: none; /* Prevent interactions with arrow */
+}
+#factorialBox {
+    display: none;
+    background-color: white;
+    animation: displayBox 1s ease-in-out;
+    width: 80%;  /* Adjusted to be more responsive */
+    max-width: 500px;  /* Prevent it from growing too wide */
+    margin: 0 auto;  /* Center the box */
+    margin-bottom: 100px;
+}
+
+#factorialBox.error {
+    color: red;
+}
+
+@keyframes displayBox {
+    from {
+        width: 0vw;
+        opacity: 0;
+    }
+    to {
+        width: 40vw;
+        opacity: 1;
+    }
+}
+
+button {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease,     /* Transition for background color */
+    border-color 0.3s ease,         /* Transition for border color */
+    box-shadow 0.3s ease;           /* Transition for box shadow */
+}
+
+footer {
+    width: 100vw;
+    text-align: left;
+    padding-left: 1vw;
+    height: auto;
+    color: #872341;
+    margin-top: 10vh;
+}
+
+.accordion-button:hover {
+    background-color: #000000;  /* Example: Blue background */
+    color: white;  /* Change text color on hover */
+  }
