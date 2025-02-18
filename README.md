@@ -21,7 +21,7 @@ A simple and user-friendly web application to calculate the factorial of a numbe
 ---
 
 ## Live Application
-Check out the live version of the application: [Click](https://github.com/SHIV1804/VirtuMexa.git)  
+Check out the live version of the application: [VirtuNexa Factorial Calculator](https://shiv1804.github.io/VirtuNexa-Factorial-Calculator/)
 
 ---
 
@@ -30,11 +30,12 @@ Follow these steps to run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/factorial-calculator-webapp.git
+   git clone https://github.com/SHIV1804/VirtuNexa-Factorial-Calculator.git
+
 
 2. Navigate to the project directory:
    ```bash
-   cd factorial-calculator-webapp
+   cd VirtuNexa-Factorial-Calculator
 
 3. Open the index.html file in your browser:
    ```bash
